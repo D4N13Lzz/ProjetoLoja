@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #222;">
+  <!--NAVBAR INICIO-->
+  <section class="home" id="home"> <!-- Inicio -->
+    <div class="header-topo">
+      <div style="color: #f8f1f1">
+        <marquee>
+          <em class="fa fa-credit-card" aria-hidden="true"></em>&nbsp; Todos os produtos em 6x sem juros no
+          cartão | &nbsp;
+          <em class="fa fa-usd" aria-hidden="true"></em>&nbsp; Cashback em todas as compras | &nbsp;
+          <em class="fa fa-truck" aria-hidden="true"></em> &nbsp; Frete Grátis em compras acima de R$ 300,00
+          para
+          a Baixada Santista | &nbsp;
+          <em class="fa fa-money" aria-hidden="true"></em>&nbsp; Cupom de 10% de Desconto na primeira compra:
+          1COMPRA10OFF
+        </marquee>
+      </div>
+    </div>
+    <div class="homeUser">
+      <div class="menu-navBar">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#"><img src="logo.png" alt="Logo da DC"></a>
+          </div>
+          <ul class="nav-menu"> <!-- NAVBAR -->
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="navbar-icone">
+                  <i class="fas fa-user-alt"></i>
+                </div>
+                <span>Entrar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="navbar-icone">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <span>Meus Favoritos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="navbar-icone item">
+                  <i class="fas fa-shopping-basket"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="navbar-icone itens">
+                  <i class="fab fa-asymmetrik"></i>
+                </div>
+                <span>Quem Somos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                <div class="navbar-icone itens">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <span>Entre em Contato</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-background">
+          <div class="hamburguer" id="panel-togglebtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-button">
+            <button class="nav-btn" id="panel-toggle">
+              <i class="fab fa-ioxhost"></i>
+              <span>NOSSOS DEPARTAMENTOS</span>
+            </button>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            <button class="clear-search" title="Limpar" type="button"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="nav-buttons">
+            <button class="nav-btns">
+              <i class="fas fa-shopping-basket"></i>
+              <span>MINHAS COMPRAS</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="imagens/slide1.png" alt="Slide 1">
+      <img src="imagens/slide2.png" alt="Slide 2">
+      <img src="imagens/slide3.png" alt="Slide 3">
+      <img src="imagens/slide4.png" alt="Slide 4">
+      <img src="imagens/slide5.png" alt="Slide 5">
+    </div>
+    <div class="carousel-dots">
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+      <span class="carousel-dot"></span>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+  <div id="imagem-destaque">
+    <img src="imagens/wallpaper.png" alt="Wallpaper">
+  </div>
+
+  <div class="imagem-promo">
+    <img src="imagens/promo1.png" alt="Imagem Promoção">
+    <img src="imagens/promo2.png" alt="Imagem Promoção">
+    <img src="imagens/promo1.png" alt="Imagem Promoção">
+  </div>
+
+  <!-- PAINEL LATERAL -->
+  <div class="panel">
+    <div class="panel-header">
+      Selecione uma<br>categoria
+      <span class="panel-close">&times;</span>
+    </div>
+    <div class="panel-body">
+      <h3>Categorias:</h3>
+
+      <div class="categoria">
+        <div class="titulo-categoria" onclick="toggleCategoria('itemprimario')">Gabinetes Gamer <span
+            class="icone-seta"></span></div>
+        <ul class="lista-categoria" id="itemprimario">
+          <a href="">
+            <li>Unidade 1</li>
+          </a>
+          <a href="">
+            <li>Unidade 2</li>
+          </a>
+          <a href="">
+            <li>Unidade 3</li>
+          </a>
+        </ul>
+      </div>
+      <div class="categoria">
+        <div class="titulo-categoria" onclick="toggleCategoria('itemsecundario')">Acessorios <span
+            class="icone-seta"></span></div>
+        <ul class="lista-categoria" id="itemsecundario">
+          <a href="">
+            <li>Unidade 4</li>
+          </a>
+          <a href="">
+            <li>Unidade 5</li>
+          </a>
+          <a href="">
+            <li>Unidade 6</li>
+          </a>
+        </ul>
+      </div>
+      <div class="categoria">
+        <div class="titulo-categoria" onclick="toggleCategoria('iconterciaria')">Mouses Pad <span
+            class="icone-seta"></span></div>
+        <ul class="lista-categoria" id="iconterciaria">
+          <a href="">
+            <li>Unidade 7</li>
+          </a>
+          <a href="">
+            <li>Unidade 8</li>
+          </a>
+          <a href="">
+            <li>Unidade 9</li>
+          </a>
+          <a href="">
+            <li>Unidade 10</li>
+          </a>
+        </ul>
+      </div>
+      <div class="panel-configs">
+        <hr>
+        <h3>Configurações:</h3>
+        <ul>
+          <a href="">
+            <li>
+              <i class="fas fa-address-card"></i>
+              &nbsp;Atendimento ao Cliente
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <i class="fas fa-user-alt"></i>
+              &nbsp;Meu Perfil
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <i class="fas fa-share-square"></i>
+              &nbsp;Logout
+            </li>
+          </a>
+          <br>
+          <hr>
+          <br>
+          <!-- OS DE BAIXO IRA APARECER AS VEZES -->
+          <a href="">
+            <li class="panel-icon">
+              <i class="fab fa-asymmetrik"></i>
+              &nbsp;Quem somos?
+            </li>
+          </a>
+          <a href="">
+            <li class="panel-icon">
+              <i class="fas fa-rocket"></i>
+              &nbsp;Entrar em Contato
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <!-- PRODUTOS -->
+  <section class="cards-section">
+    <h2 class="cards-title">
+      <i class="fas fa-exclamation-circle"></i> RECOMENDADOS PARA VOCÊ
+    </h2>
+    <div class="product-grid">
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto1.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Monitor Gamer MSI Optix G24C 23.6" LED Curvo 144Hz 1ms FHD DVI/HDMI/DP Preto/Vermelho, Optix G24C</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,320,00</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto1.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Monitor Gamer MSI Optix G24C 23.6" LED Curvo 144Hz 1ms FHD DVI/HDMI/DP Preto/Vermelho, Optix G24C</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,320,00</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto1.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Monitor Gamer MSI Optix G24C 23.6" LED Curvo 144Hz 1ms FHD DVI/HDMI/DP Preto/Vermelho, Optix G24C</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,320,00</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto1.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Monitor Gamer MSI Optix G24C 23.6" LED Curvo 144Hz 1ms FHD DVI/HDMI/DP Preto/Vermelho, Optix G24C</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,320,00</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="images-container">
+      <img
+        src="https://www.kabum.com.br/core/_next/image?url=https://themes.kabum.com.br/conteudo/ads/splashline/1048.jpg&w=1920&h=248&q=100"
+        alt="Imagem" />
+    </div>
+
+    <!-- PRODUTOS NOVOS E LANÇAMENTOS -->
+
+    <h2 class="cards-title">
+      <i class="fas fa-fire"></i> NOVOS E LANÇAMENTOS
+    </h2>
+    <div class="product-grid">
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto2.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Computador Mancer Gamer Lorride, AMD Ryzen 3 3200G, 16GB DDR4, SSD 240GB</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,799,99</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto2.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Computador Mancer Gamer Lorride, AMD Ryzen 3 3200G, 16GB DDR4, SSD 240GB</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,799,99</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto2.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Computador Mancer Gamer Lorride, AMD Ryzen 3 3200G, 16GB DDR4, SSD 240GB</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,799,99</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto2.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Computador Mancer Gamer Lorride, AMD Ryzen 3 3200G, 16GB DDR4, SSD 240GB</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$1,799,99</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- SESSÃO OFERTAS EM DESTAQUE -->
+
+    <h2 class="cards-title">
+      <i class="fab fa-swift"></i> OFERTAS EM DESTAQUE
+    </h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto3.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Headset Gamer Mancer Quartz, Drivers 50mm, Preto, MCR-QTZ-BL01</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$189,90</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto3.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Headset Gamer Mancer Quartz, Drivers 50mm, Preto, MCR-QTZ-BL01</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$189,90</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto3.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Headset Gamer Mancer Quartz, Drivers 50mm, Preto, MCR-QTZ-BL01</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$189,90</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+      <!-- PRODUTOS -->
+      <div class="card">
+        <a href="link-para-detalhes-do-produto">
+          <img src="imagens/produto3.jpg" alt="Nome do Produto" title="Ver mais detalhes">
+        </a>
+        <h3>Headset Gamer Mancer Quartz, Drivers 50mm, Preto, MCR-QTZ-BL01</h3>
+        <p class="price">
+          <span class="price-label">À vista</span>
+          <span class="price-value">R$189,90</span>
+          <span class="price-discount">no Pix com 15% de desconto</span>
+        </p>
+        <button class="add-to-cart"><i class="fas fa-shopping-basket"></i> Adicionar ao Carrinho</button>
+        <button class="add-to-favorites"><i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+    <div class="images-container">
+      <img
+        src="https://www.kabum.com.br/core/_next/image?url=https://themes.kabum.com.br/conteudo/ads/splashline/1048.jpg&w=1920&h=248&q=100"
+        alt="Imagem" />
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cotact">
+      <div class="footer-info">
+        <a href="" target="_blank">
+          <i class="fas fa-clock"></i>
+          <span>Horário de Atendimento<br><span>Segunda a sexta 8h às 12h e das 14h às 18h</span></span>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+          <span>(11) 99999-9999</span>
+        </a>
+        <a href="mailto:contato@meusite.com.br">
+          <i class="fas fa-envelope"></i>
+          <span>contato@meusite.com.br</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>D4N13L</h4>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <h4></h4>
+          <ul class="list-contact">
+            <li><a href="#"><i class="fas fa-clock"></i> Segunda a sexta 8h às 12h e das 14h às 18h</a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i> (13) 99999-0509</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> contato@meusite.com.br</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>INSTITUCIONAL</h4>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Localização</a></li>
+            <li><a href="#">Nossa loja</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AJUDA</h4>
+          <ul>
+            <li><a href="#">Fale conosco</a></li>
+            <li><a href="#">Termos de aceite</a></li>
+            <li><a href="#">Políticas de Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>DÚVIDAS</h4>
+          <ul>
+            <li><a href="#">Entrega</a></li>
+            <li><a href="#">Garantia</a></li>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            <li><a href="#">Sobre Boletos</a></li>
+          </ul>
+        </div>
+        <ul class="payment-methods">
+          <li><i class="fab fa-cc-visa"></i></li>
+          <li><i class="fab fa-cc-mastercard"></i></li>
+          <li><i class="fab fa-cc-amex"></i></li>
+          <li><i class="fab fa-cc-discover"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-fim">
+    <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="slides.js"></script>
+</body>
+</html>
