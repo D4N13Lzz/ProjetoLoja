@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 *,
 *::before,
@@ -55,17 +56,21 @@ body {
 }
 
 .header-topo {
-  height: 30px;
+  height: 20px;
   display: table;
   margin: 0 auto;
   width: 100%;
-  padding: 7px;
+  padding: 0px;
   position: relative;
-  z-index: 8;
+  z-index: 5;
+  background-color: #303030;
+  margin-top: 59px;
 }
 
 .header-topo marquee {
-  font-size: 17px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bolder;
 }
 
 .fa {
@@ -285,11 +290,16 @@ body {
 .search-container .clear-search i {
   color: #a3a3a3;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .search-container .clear-search:hover i {
   color: #6b6b6b;
 }
+
+
+
+
 
 
 /*
@@ -795,7 +805,7 @@ CARROUSEL
 
 .carousel-slide {
   display: flex;
-  width: 700%;
+  width: 650%;
   transition: transform 0.5s ease;
 }
 
@@ -890,17 +900,329 @@ CARROUSEL
   max-width: 100%;
 }
 
+
+
+
+
+/* ========== User Form =========== */
+.body-sem-scroll {
+  overflow: hidden;
+}
+
+.icon img {
+  width: 20px;
+}
+
+.user-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5;
+  z-index: 10000;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease-in-out;
+  /* Functionality */
+  
+}
+.user-form.active {
+  background-color: #222;
+}
+.user-form.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+/* FECHAR */
+.user-form .close-form {
+  position: absolute;
+  top: 12.5%;
+  right: 14.4%;
+  color: #303030;
+  justify-content: center;
+  border-radius: 10%;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+.user-form .close-form:hover {
+  color: #353535;
+}
+
+/* FUNDO IMAGE */
+.user-form .container {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background-color: #222;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+/* FUNDO LOGIN TUDO */
+.user-form .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+/* FUNDO IMG */
+.user-form .img-box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: all 500ms ease-in-out;
+}
+
+/* IMAGE */
+.user-form .img-box img {
+  object-fit: cover;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  height: 90%;
+}
+/* FUNDO ENTRAR */
+.user-form .form-box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #303030;
+  transition: 500ms ease-in-out;
+}
+/* BOTAO CADASTRAR */
+.user-form .form-box .top {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.user-form .form-box .top p {
+  font-size: 13px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+}
+.user-form .form-box .top span {
+  /* CADASTRAR */
+  color: rgb(155, 155, 155); 
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+
+}
+.user-form .form-box .top span:hover {
+  color: rgba(155, 155, 155, 0.562); 
+}
+
+.user-form form {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  max-width: 300px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-form form .form-control:first-child {
+  text-align: center;
+}
+.user-form form .form-control:first-child input {
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #606060;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-indent: 16px;
+  width: 100%;
+  color: #FFF;
+  outline: none;
+  background-color: transparent;
+}
+
+.user-form form .form-control:first-child input:hover {
+  border: 1px solid #ffffff;
+}
+
+.user-form form .form-control:first-child input[type="submit"] {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #e90313;
+  color: white;
+  transition: 0.5s;
+}
+.user-form form .form-control:first-child input[type="submit"]:hover {
+  background-color: #a3020d;
+}
+.user-form form .form-control:first-child h2 {
+  width: 100%;
+  font-weight: 400;
+  font-size: 26px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+}
+.user-form form .form-control:first-child p {
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+}
+.user-form form .form-control:first-child span {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e90313;
+  cursor: pointer;
+  width: 42%;
+  margin-left: 57%;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.user-form form .form-control:first-child span:hover {
+  color: #a3020d;
+}
+
+.user-form form .form-control:first-child div {
+  position: relative;
+}
+.user-form form .form-control:first-child .icon {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+.user-form form .form-control:last-child {
+  text-align: center;
+}
+.user-form form .form-control:last-child p {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+
+}
+.user-form form .form-control:last-child p::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: #fffdfd;
+
+}
+.user-form form .form-control:last-child p::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: #ddd;
+}
+.user-form form .form-control:last-child .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.user-form form .form-control:last-child .icons .icon {
+  cursor: pointer;
+}
+.user-form form .form-control:last-child .icons .icon:not(:last-child) {
+  margin-right: 15px;
+}
+.user-form .container .signup {
+  pointer-events: none;
+}
+.user-form .container .signup .form-box {
+  top: 100%;
+}
+.user-form .container .signup .img-box {
+  top: -100%;
+}
+.user-form .container.active .signup {
+  pointer-events: initial;
+}
+.user-form .container.active .signup .form-box {
+  top: 0;
+}
+.user-form .container.active .signup .img-box {
+  top: 0;
+}
+.user-form .container .login .form-box {
+  top: 0;
+}
+.user-form .container .login .img-box {
+  top: 0;
+}
+.user-form .container.active .login .form-box {
+  top: 100%;
+}
+.user-form .container.active .login .img-box {
+  top: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 =========================================
      REPONSIVIDADE NAVBAR COMPLETA
 =========================================
 */
+@media (max-width: 1355px) {
+  .user-form .close-form {
+    top: 10px;
+    right: 35px;
+    padding: 0.7rem;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 1250px) {
   .nav-menu {
     display: flex;
     align-items: center;
     gap: 10px;
     padding-left: 10%;
+  }
+  .user-form .close-form {
+    top: 10px;
+    right: 35px;
+    padding: 0.7rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 1150px) {
@@ -1119,6 +1441,28 @@ OUTROS
 
 }
 
+@media (max-width: 996px) {
+  .user-form .container {
+    max-width: 400px;
+  }
+  .user-form .container .img-box {
+    display: none;
+  }
+  .user-form .container .form-box {
+    width: 100%;
+  }
+  .user-form .container.active .login .form-box {
+    top: -100%;
+  }
+  .user-form .close-form {
+    top: 10px;
+    right: 35px;
+    padding: 0.7rem;
+    font-size: 2rem;
+    
+  }
+}
+
 @media (max-width: 950px) {
   .nav-menu {
     display: flex;
@@ -1223,6 +1567,22 @@ OUTROS
     gap: 15px;
     margin-top: 10px;
     margin-left: 35%;
+  }
+}
+
+@media (max-width: 567px) {
+  .header .navbar .row .nav-list a.user-link {
+    display: block;
+  }
+
+  .user-form {
+    padding: 0;
+  }
+  .user-form .close-form {
+    top: 10px;
+    right: 35px;
+    padding: 0.7rem;
+    font-size: 2rem;
   }
 }
 

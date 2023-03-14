@@ -1,46 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styleS.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body style="background-color: #222;">
-
   <!--NAVBAR INICIO-->
   <section class="home" id="home"> <!-- Inicio -->
-    <div class="header-topo">
-      <div style="color: #f8f1f1">
-        <marquee>
-          <em class="fa fa-credit-card" aria-hidden="true"></em>&nbsp; Todos os produtos em 6x sem juros no
-          cartão | &nbsp;
-          <em class="fa fa-usd" aria-hidden="true"></em>&nbsp; Cashback em todas as compras | &nbsp;
-          <em class="fa fa-truck" aria-hidden="true"></em> &nbsp; Frete Grátis em compras acima de R$ 300,00
-          para
-          a Baixada Santista | &nbsp;
-          <em class="fa fa-money" aria-hidden="true"></em>&nbsp; Cupom de 10% de Desconto na primeira compra:
-          1COMPRA10OFF
-        </marquee>
-      </div>
-    </div>
     <div class="homeUser">
       <div class="menu-navBar">
         <nav class="navbar">
           <div class="logo">
-            <a href="#"><img src="logo.png" alt="Logo da DC"></a>
+            <a href="#"><img src="imagens/logo.png" alt="Logo da DC"></a>
           </div>
           <ul class="nav-menu"> <!-- NAVBAR -->
             <li class="nav-item">
-              <a href="#home" class="nav-link">
+              <a href="#home" class="nav-link icon user-icon d-flex" title="Entrar ou Cadastrar">
                 <div class="navbar-icone">
                   <i class="fas fa-user-alt"></i>
                 </div>
@@ -105,6 +87,19 @@
           </div>
         </div>
       </div>
+      <div class="header-topo">
+        <div>
+          <marquee>
+            <em class="fa fa-credit-card" aria-hidden="true"></em>&nbsp; Todos os produtos em 6x sem juros no
+            cartão | &nbsp;
+            <em class="fa fa-usd" aria-hidden="true"></em>&nbsp; Cashback em todas as compras | &nbsp;
+            <em class="fa fa-truck" aria-hidden="true"></em> &nbsp; Frete Grátis em compras acima de R$ 300,00
+            para
+            a Baixada Santista | &nbsp;
+            <em class="fa fa-money" aria-hidden="true"></em> &nbsp;
+          </marquee>
+        </div>
+      </div>
   </section>
 
   <div class="carousel-container">
@@ -114,7 +109,6 @@
       <img src="imagens/slide3.png" alt="Slide 3">
       <img src="imagens/slide4.png" alt="Slide 4">
       <img src="imagens/slide5.png" alt="Slide 5">
-
     </div>
     <div class="carousel-dots">
       <span class="carousel-dot"></span>
@@ -517,7 +511,118 @@
     <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
   </div>
 
-  <script src="script.js"></script>
-  <script src="slides.js"></script>
+<!-- 
+=========================================
+PAINEL LOGIN
+=========================================
+ -->
+
+
+
+ <div class="user-form">
+  <div class="close-form d-flex">
+    <i class="fas fa-times-circle"></i>
+  </div>
+  <div class="form-wrapper container">
+    <div class="user login">
+      <div class="img-box">
+        <img src="imagens/login/image-login.svg" alt="Criar Conta" />
+      </div>
+      <div class="form-box">
+        <div class="top">
+          <p>
+            Novo Cliente?
+            <span data-id="#ff0066">CADASTRE-SE</span>
+          </p>
+        </div>
+        <form action="">
+          <div class="form-control">
+            <h2>Já tem uma conta?</h2>
+            <p>Informe os seus dados abaixo para acessá-la.</p>
+            <input type="email" placeholder="E-Mail *" />
+            <div>
+              <input type="password" placeholder="Senha *" />
+              <div class="icon form-icon">
+              </div>
+            </div>
+            <span>Esqueci minha senha</span>
+            <input type="Submit" value="ACESSAR CONTA" />
+          </div>
+          <div class="form-control">
+            <p>Ou continuar com</p>
+            <div class="icons">
+              <div class="icon">
+                <img src="imagens/login/google.svg" alt="Google" />
+              </div>
+              <div class="icon">
+                <img src="imagens/login/facebook.svg" alt="Facebook" />
+              </div>
+              <div class="icon">
+                <img src="imagens/login/apple.svg" alt="Apple" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Registro -->
+    <div class="user signup">
+      <div class="form-box">
+        <div class="top">
+          <p>
+            Já está registrado?
+            <span data-id="#1a1aff">ACESSAR CONTA</span>
+          </p>
+        </div>
+        <form action="">
+          <div class="form-control">
+            <h2>Criar minha conta</h2>
+            <p>Informe os seus dados abaixo para criar sua conta.</p>
+            <input type="text" placeholder="Nome" />
+            <input type="text" placeholder="Sobrenome" />
+            <input type="email" placeholder="Insira seu e-mail" />
+            <div>
+              <input type="password" placeholder="Insira sua senha" />
+              <div class="icon form-icon">
+                <img src="imagens/login/eye.svg" alt="Mostrar" />
+              </div>
+            </div>
+            <div>
+            </div>
+            <input type="Submit" value="CRIAR CONTA" />
+          </div>
+          <div class="form-control">
+            <p>Ou continuar com</p>
+            <div class="icons">
+              <div class="icon">
+                <img src="imagens/login/google.svg" alt="Google" />
+              </div>
+              <div class="icon">
+                <img src="imagens/login/facebook.svg" alt="Facebook" />
+              </div>
+              <div class="icon">
+                <img src="imagens/login/apple.svg" alt="apple" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="img-box imgbox">
+        <img src="imagens/login/image-cadastro.svg" alt="CADASTRE-SE" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <script src="javascript/script.js"></script>
+  <script src="javascript/slides.js"></script>
+  <script src="javascript/login.js"></script>
+
 </body>
+
 </html>
