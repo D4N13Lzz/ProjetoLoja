@@ -11,7 +11,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: #222;">
+<body>
   <!--NAVBAR INICIO-->
   <section class="home" id="home"> <!-- Inicio -->
     <div class="homeUser">
@@ -75,7 +75,7 @@
             </button>
           </div>
           <div class="search-container">
-            <input type="text" placeholder="Pesquisar...">
+            <input type="text" placeholder="Digite o que você procura...">
             <button type="submit"><i class="fas fa-search"></i></button>
             <button class="clear-search" title="Limpar" type="button"><i class="fas fa-times"></i></button>
           </div>
@@ -441,7 +441,7 @@
   <footer class="footer">
     <div class="footer-cotact">
       <div class="footer-info">
-        <a href="" target="_blank">
+        <a href="#footer">
           <i class="fas fa-clock"></i>
           <span>Horário de Atendimento<br><span>Segunda a sexta 8h às 12h e das 14h às 18h</span></span>
         </a>
@@ -511,7 +511,7 @@
     <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
   </div>
 
-<!-- 
+  <!-- 
 =========================================
 PAINEL LOGIN
 =========================================
@@ -519,101 +519,101 @@ PAINEL LOGIN
 
 
 
- <div class="user-form">
-  <div class="close-form d-flex">
-    <i class="fas fa-times-circle"></i>
-  </div>
-  <div class="form-wrapper container">
-    <div class="user login">
-      <div class="img-box">
-        <img src="imagens/login/image-login.svg" alt="Criar Conta" />
-      </div>
-      <div class="form-box">
-        <div class="top">
-          <p>
-            Novo Cliente?
-            <span data-id="#ff0066">CADASTRE-SE</span>
-          </p>
-        </div>
-        <form action="">
-          <div class="form-control">
-            <h2>Já tem uma conta?</h2>
-            <p>Informe os seus dados abaixo para acessá-la.</p>
-            <input type="email" placeholder="E-Mail *" />
-            <div>
-              <input type="password" placeholder="Senha *" />
-              <div class="icon form-icon">
-              </div>
-            </div>
-            <span>Esqueci minha senha</span>
-            <input type="Submit" value="ACESSAR CONTA" />
-          </div>
-          <div class="form-control">
-            <p>Ou continuar com</p>
-            <div class="icons">
-              <div class="icon">
-                <img src="imagens/login/google.svg" alt="Google" />
-              </div>
-              <div class="icon">
-                <img src="imagens/login/facebook.svg" alt="Facebook" />
-              </div>
-              <div class="icon">
-                <img src="imagens/login/apple.svg" alt="Apple" />
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+  <div class="user-form">
+    <div class="close-form d-flex">
+      <i class="fas fa-times-circle"></i>
     </div>
+    <div class="form-wrapper container">
+      <div class="user login">
+        <div class="img-box">
+          <!-- <img src="imagens/login/image-login.svg" alt="Criar Conta" /> -->
+        </div>
+        <div class="form-box">
+          <div class="top">
+            <p>
+              Novo Cliente?
+              <span data-id="#ff0066">CADASTRE-SE</span>
+            </p>
+          </div>
+          <form action="">
+            <div class="form-control">
+              <h2>Já tem uma conta?</h2>
+              <p>Informe os seus dados abaixo para acessá-la.</p>
+              <input type="email" placeholder="E-Mail *" />
+              <div>
+                <input type="password" placeholder="Senha *" />
+                <div class="icon form-icon">
+                </div>
+              </div>
+              <span>Esqueci minha senha</span>
+              <input type="Submit" value="ACESSAR CONTA" />
+            </div>
+            <div class="form-control">
+              <p>Ou continuar com</p>
+              <div class="icons">
+                <div class="icon">
+                  <img src="imagens/login/google.svg" alt="Google" />
+                </div>
+                <div class="icon">
+                  <img src="imagens/login/facebook.svg" alt="Facebook" />
+                </div>
+                <div class="icon">
+                  <img src="imagens/login/apple.svg" alt="Apple" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 
-    <!-- Registro -->
-    <div class="user signup">
-      <div class="form-box">
-        <div class="top">
-          <p>
-            Já está registrado?
-            <span data-id="#1a1aff">ACESSAR CONTA</span>
-          </p>
+      <!-- Registro -->
+      <div class="user signup">
+        <div class="form-box">
+          <div class="top">
+            <p>
+              Já está registrado?
+              <span data-id="#1a1aff">ACESSAR CONTA</span>
+            </p>
+          </div>
+          <form action="">
+            <div class="form-control">
+              <h2>Criar minha conta</h2>
+              <p>Informe os seus dados abaixo para criar sua conta.</p>
+              <input type="text" placeholder="Nome" />
+              <input type="text" placeholder="Sobrenome" />
+              <input type="email" placeholder="Insira seu e-mail" />
+              <div>
+                <input type="password" placeholder="Insira sua senha" />
+                <div class="icon form-icon">
+                  <img src="imagens/login/eye.svg" alt="Mostrar" />
+                </div>
+              </div>
+              <div>
+              </div>
+              <input type="Submit" value="CRIAR CONTA" />
+            </div>
+            <div class="form-control">
+              <p>Ou continuar com</p>
+              <div class="icons">
+                <div class="icon">
+                  <img src="imagens/login/google.svg" alt="Google" />
+                </div>
+                <div class="icon">
+                  <img src="imagens/login/facebook.svg" alt="Facebook" />
+                </div>
+                <div class="icon">
+                  <img src="imagens/login/apple.svg" alt="apple" />
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        <form action="">
-          <div class="form-control">
-            <h2>Criar minha conta</h2>
-            <p>Informe os seus dados abaixo para criar sua conta.</p>
-            <input type="text" placeholder="Nome" />
-            <input type="text" placeholder="Sobrenome" />
-            <input type="email" placeholder="Insira seu e-mail" />
-            <div>
-              <input type="password" placeholder="Insira sua senha" />
-              <div class="icon form-icon">
-                <img src="imagens/login/eye.svg" alt="Mostrar" />
-              </div>
-            </div>
-            <div>
-            </div>
-            <input type="Submit" value="CRIAR CONTA" />
-          </div>
-          <div class="form-control">
-            <p>Ou continuar com</p>
-            <div class="icons">
-              <div class="icon">
-                <img src="imagens/login/google.svg" alt="Google" />
-              </div>
-              <div class="icon">
-                <img src="imagens/login/facebook.svg" alt="Facebook" />
-              </div>
-              <div class="icon">
-                <img src="imagens/login/apple.svg" alt="apple" />
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="img-box imgbox">
-        <img src="imagens/login/image-cadastro.svg" alt="CADASTRE-SE" />
+        <div class="img-box imgbox">
+          <!-- <img src="imagens/login/image-cadastro.svg" alt="CADASTRE-SE" /> -->
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
