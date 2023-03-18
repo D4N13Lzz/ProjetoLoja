@@ -105,4 +105,3 @@ clearButton.addEventListener('click', () => {
     searchButton.style.display = 'block';
     input.focus();
 });
-
