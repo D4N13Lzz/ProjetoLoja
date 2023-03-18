@@ -1,7 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const navbackground = document.querySelector('.nav-background');
 const headertopo = document.querySelector('.header-topo');
-// const contact = document.querySelector('.contact');
+const body = document.querySelector('body');
 // const footer = document.querySelector('.footer');
 // const scrollDark = document.querySelector('.scrollDark');
 // const navbar = document.querySelector('.navbar');
@@ -45,7 +45,7 @@ function updateTheme(theme) {
     navbar.classList.add('dark');
     navbackground.classList.add('dark');
     headertopo.classList.add('dark');
-    // contact.classList.add('dark');
+    body.classList.add('dark');
     // footer.classList.add('dark');
     // scrollDark.classList.add('dark');
     // navbar.classList.add('dark');
@@ -59,7 +59,7 @@ function updateTheme(theme) {
     navbar.classList.remove('dark');
     navbackground.classList.remove('dark');
     headertopo.classList.remove('dark');
-    // contact.classList.remove('dark');
+    body.classList.remove('dark');
     // footer.classList.remove('dark');
     // scrollDark.classList.remove('dark');
     // navbar.classList.remove('dark');
