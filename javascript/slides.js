@@ -52,8 +52,6 @@ function nextSlide() {
   }
 }
 
-
-
 // Previous slide with animation
 function prevSlide() {
     slideIndex--;

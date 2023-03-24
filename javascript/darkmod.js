@@ -1,10 +1,15 @@
 const navbar = document.querySelector('.navbar');
 const navbackground = document.querySelector('.nav-background');
 const headertopo = document.querySelector('.header-topo');
-const body = document.querySelector('body');
-// const footer = document.querySelector('.footer');
-// const scrollDark = document.querySelector('.scrollDark');
-// const navbar = document.querySelector('.navbar');
+const backgroundall = document.querySelector('.backgroundAll');
+const cards = document.querySelector('.cards-section');
+const footer = document.querySelector('.footer');
+const footerfim = document.querySelector('.footer-fim');
+const carrousel = document.querySelector('.carousel-container');
+const login = document.querySelector('.user-form');
+const painel = document.querySelector('.panel');
+
+
 
 const iconMode = document.querySelector('.iconMode');
 const moonIcon = iconMode.querySelector('.moon-icon');
@@ -30,13 +35,16 @@ iconMode.addEventListener('click', () => {
   if (currentTheme === 'dark') {
     iconMode.classList.remove('light');
     iconMode.classList.add('dark');
-    darkModeText.style.display = 'none';
-    lightModeText.style.display = 'inline';
+
+    darkModeText.style.display = 'inline';
+    lightModeText.style.display = 'none';
+    
   } else {
     iconMode.classList.remove('dark');
     iconMode.classList.add('light');
-    darkModeText.style.display = 'inline';
-    lightModeText.style.display = 'none';
+
+    darkModeText.style.display = 'none';
+    lightModeText.style.display = 'inline';
   }
 });
 
@@ -45,30 +53,38 @@ function updateTheme(theme) {
     navbar.classList.add('dark');
     navbackground.classList.add('dark');
     headertopo.classList.add('dark');
-    body.classList.add('dark');
-    // footer.classList.add('dark');
-    // scrollDark.classList.add('dark');
-    // navbar.classList.add('dark');
+    backgroundall.classList.add('dark');
+    cards.classList.add('dark');
+    footer.classList.add('dark');
+    footerfim.classList.add('dark');
+    carrousel.classList.add('dark');
+    login.classList.add('dark');
+    painel.classList.add('dark');
 
     iconMode.classList.add('dark');
-    moonIcon.style.display = 'none';
-    sunIcon.style.display = 'inline';
-    darkModeText.style.display = 'none';
-    lightModeText.style.display = 'inline';
+    moonIcon.style.display = 'inline';
+    sunIcon.style.display = 'none';
+    
+    darkModeText.style.display = 'inline';
+    lightModeText.style.display = 'none';
   } else {
     navbar.classList.remove('dark');
     navbackground.classList.remove('dark');
     headertopo.classList.remove('dark');
-    body.classList.remove('dark');
-    // footer.classList.remove('dark');
-    // scrollDark.classList.remove('dark');
-    // navbar.classList.remove('dark');
+    backgroundall.classList.remove('dark');
+    cards.classList.remove('dark');
+    footer.classList.remove('dark');
+    footerfim.classList.remove('dark');
+    carrousel.classList.remove('dark');
+    login.classList.remove('dark');
+    painel.classList.remove('dark');
+
 
     iconMode.classList.remove('dark');
-    moonIcon.style.display = 'inline';
-    sunIcon.style.display = 'none';
-    darkModeText.style.display = 'inline';
-    lightModeText.style.display = 'none';
+    moonIcon.style.display = 'none';
+    sunIcon.style.display = 'inline';
+    darkModeText.style.display = 'none';
+    lightModeText.style.display = 'inline';
   }
 }
 
